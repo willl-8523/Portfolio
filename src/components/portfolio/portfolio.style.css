@@ -1,0 +1,15 @@
+.description-portfolio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform .4s .2s ease-in;
+}
+.description-portfolio:hover {
+    transform: translateX(0%);
+}
+
+.img-portfolio:hover ~ .description-portfolio {
+    transform: translateX(0%);
+    transition: transform .4s .2s ease-in-out;
+}

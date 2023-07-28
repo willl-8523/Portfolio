@@ -1,0 +1,67 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    position: relative;
+}
+.timeline-container:after {
+    content: "";
+    height: 100%;
+    left: calc(50% - 2px);
+    position: absolute;
+    width: 4px;
+    background-color: rgba(31, 31, 31, .7);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    padding-right: 30px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item-content:after {
+    background-color: #fff;
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, .2);
+    content: " ";
+    height: 15px;
+    position: absolute;
+    right: -7.5px;
+    top: calc(50% - 7.5px);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 15px;
+}
+
+.timeline-item-content .circle {
+    background-color: #fff;
+    border: 3px solid rgba(31, 31, 31, .7);
+    border-radius: 50%;
+    height: 20px;
+    position: absolute;
+    right: -40px;
+    top: calc(50% - 10px);
+    width: 20px;
+    z-index: 100;
+}
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+}
+.timeline-item:nth-child(odd) .timeline-item-content:after {
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, .2);
+    left: -7.5px;
+    right: auto;
+}
+.timeline-item:nth-child(odd) .timeline-item-content .circle {
+    left: -40px;
+    right: auto;
+}
+
+.arrow::after {
+    content: '▶';
+}
