@@ -17,7 +17,7 @@ const Contact = () => {
   const onChange = (value) => {
     console.log('Captcha value:', value);
     setCaptchaIsDone(!captchaIsDone);
-    setError(!error);
+    setError(false);
   };
 
   const handleClick = () => {
