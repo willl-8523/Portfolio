@@ -2,8 +2,9 @@ import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import Field from '../components/form/Field.component';
-import TextArea from '../components/form/TextArea.component';
+import Field from '../../components/form/Field.component';
+import TextArea from '../../components/form/TextArea.component';
+import validation from './validation';
 
 const Contact = () => {
   const form = useRef();

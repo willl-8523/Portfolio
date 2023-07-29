@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Menu from './components/menu/Menu.component';
 import Competences from './pages/Competences.page';
-import Contact from './pages/Contact.page';
+import Contact from './pages/contact/Contact.page';
 import Experiences from './pages/Experiences.page';
 import Formations from './pages/Formations.page';
 import Home from './pages/Home.page';
