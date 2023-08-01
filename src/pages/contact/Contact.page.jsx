@@ -1,10 +1,9 @@
+import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
-import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
-import Field from '../../components/form/Field.component';
-import TextArea from '../../components/form/TextArea.component';
 import validation from './validation';
+import ErrorComponent from '../../components/form/Error.component';
 
 const Contact = () => {
   const form = useRef();
@@ -12,21 +11,48 @@ const Contact = () => {
 
   const reCAPTCHA_KEY = process.env.REACT_APP_RECAPCHAT_KEY;
 
-  const [captchaIsDone, setCaptchaIsDone] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState('');
   const [error, setError] = useState(false);
+
+  const initialValues = {
+    user_name: '',
+    user_email: '',
+    sujet: '',
+    message: '',
+  };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+
+    const { nameError, valueError } = { ...formErrors };
+    setFormErrors({ ...formErrors, [nameError]: valueError });
+  };
 
   const onChange = (value) => {
     console.log('Captcha value:', value);
-    setCaptchaIsDone(!captchaIsDone);
-    setError(false);
-  };
 
-  const handleClick = () => {
-    !captchaIsDone ? setError(true) : setError(false);
+    if (value) {
+      setCaptchaValue(value);
+      setError(false);
+    } else {
+      setCaptchaValue('');
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (Object.keys(validation(formValues)).length !== 0)
+      return setFormErrors(validation(formValues));
+    if (!captchaValue) {
+      setFormErrors({});
+      return setError(true);
+    }
+
+    setFormErrors({});
 
     emailjs
       .sendForm(
@@ -37,22 +63,19 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
-
-          // Réinitialisation de Recapchat
+          // Réinitialisation de Recapchat et du formulaire
           if (recaptchaRef.current) {
             recaptchaRef.current.reset();
+            setFormValues(initialValues);
           }
 
           // Notification flash d'un succès
           toast.success(`Mail envoyé! 😃`);
         },
         (error) => {
-          // console.log(error.text);
           toast.error(`Une erreur est survenue 😞`);
         }
       );
-    e.target.reset();
   };
 
   return (
@@ -75,48 +98,75 @@ const Contact = () => {
             <form ref={form} onSubmit={handleSubmit}>
               <div className="fieldInput flex flex-row flex-wrap justify-between">
                 <div className="field basis-48 max-w-50 mb-5">
-                  <Field type="text" placeholder="Nom*" name="nom" required />
+                  <input
+                    className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray  ring-1 ring-pink-300 ring-inset"
+                    type="text"
+                    placeholder="Nom*"
+                    name="user_name"
+                    value={formValues.user_name}
+                    onChange={handleChange}
+                  />
+                  <ErrorComponent
+                    error_name={formErrors.user_name}
+                    message={formErrors.user_name}
+                  />
                 </div>
                 <div className="field basis-48 max-w-50 mb-5">
-                  <Field
-                    type="email"
+                  <input
+                    className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray  ring-1 ring-pink-300 ring-inset"
+                    type="text"
                     placeholder="E-mail*"
                     name="user_email"
-                    required
+                    value={formValues.user_email}
+                    onChange={handleChange}
+                  />
+                  <ErrorComponent
+                    error_name={formErrors.user_email}
+                    message={formErrors.user_email}
                   />
                 </div>
               </div>
               <div className="flex-row flex-wrap mb-5">
-                <Field type="text" placeholder="Sujet*" name="sujet" required />
+                <input
+                  className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray  ring-1 ring-pink-300 ring-inset"
+                  type="text"
+                  placeholder="Sujet*"
+                  name="sujet"
+                  value={formValues.sujet}
+                  onChange={handleChange}
+                />
+                <ErrorComponent
+                  error_name={formErrors.sujet}
+                  message={formErrors.sujet}
+                />
               </div>
               <div className="flex-row flex-wrap mb-5">
-                <TextArea name="message" placeholder="Message*" required />
+                <textarea
+                  className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray ring-1 ring-pink-300 ring-inset"
+                  name="message"
+                  placeholder="Message (minimun 10 caractères)"
+                  value={formValues.message}
+                  onChange={handleChange}
+                ></textarea>
+                <ErrorComponent
+                  error_name={formErrors.message}
+                  message={formErrors.message}
+                />
               </div>
               <div className="flex-row flex-wrap">
-                <div>
-                  <ReCAPTCHA
-                    sitekey={reCAPTCHA_KEY}
-                    onChange={onChange}
-                    ref={recaptchaRef}
-                  />
-                  <small
-                    className={
-                      !error
-                        ? 'text-red-600 invisible'
-                        : 'text-red-600 visible duration-300'
-                    }
-                  >
-                    Veuillez cocher la case "Je ne suis pas un robot"
-                  </small>
-                  <button
-                    type={!captchaIsDone ? 'button' : 'submit'}
-                    className="flex items-center gap-1.5 bg-davy-grey text-main-color rounded-md font-light tracking-wider my-3 py-3 px-4 hover:bg-very-dark-gray"
-                    onClick={handleClick}
-                  >
-                    Envoyer <i className="bx bxs-send -rotate-45"></i>
-                  </button>
-                </div>
+                <ReCAPTCHA
+                  sitekey={reCAPTCHA_KEY}
+                  onChange={onChange}
+                  ref={recaptchaRef}
+                />
+                <ErrorComponent
+                  error_name={error}
+                  message='Veuillez cocher la case "Je ne suis pas un robot"'
+                />
               </div>
+              <button className="flex items-center gap-1.5 bg-davy-grey text-main-color rounded-md font-light tracking-wider my-3 py-3 px-4 hover:bg-very-dark-gray">
+                Envoyer <i className="bx bxs-send -rotate-45"></i>
+              </button>
             </form>
           </div>
         </div>
