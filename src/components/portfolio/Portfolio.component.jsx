@@ -39,7 +39,7 @@ const PortfolioComponent = ({
             className="text-center font-bold text-red-color p-1 text-sm hover:underline duration-300"
             target="_blank"
           >
-            <i className="bx bxl-github"></i> {'>'} Code source
+            <i className="bx bxl-github"></i> {'>'} View source code
           </Link>
         </div>
       </div>
