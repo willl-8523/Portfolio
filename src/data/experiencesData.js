@@ -5,7 +5,8 @@ const experiencesData = [
     fin: 'Déc',
     annee: '2022',
     label: 'SAS Foodity',
-    description: 'Refonte et responsive de l’application foodity.fr',
+    description:
+      'Redesign and Responsive Development of the foodity.fr Application.',
     icon: 'buildings',
   },
   {
@@ -15,7 +16,7 @@ const experiencesData = [
     annee: '2020 - 2021',
     label: 'Enviro Services France (Wambrechies)',
     description:
-      'Technicien : Réparation appareils téléphoniques et électroménagers',
+      'Technician: Repair of Mobile Devices and Household Appliances',
     icon: 'buildings',
   },
   {
@@ -25,7 +26,7 @@ const experiencesData = [
     annee: '2018 – 2020',
     label: 'Enviro Services France (Wambrechies)',
     description:
-      'Intérimaire ouvrier : Réparation appareils téléphoniques et électroménagers',
+      'Temporary Worker: Repair of Mobile Devices and Household Appliances.',
     icon: 'buildings',
   },
   {
@@ -35,7 +36,7 @@ const experiencesData = [
     annee: '2014',
     label: 'Silicon Salad (Lille)',
     description:
-      'Stagiaire Intégrateur HTML/CSS : Mise à jour de la partie Front-end de l’application web',
+      'HTML/CSS Integration Intern: Front-end Update of the Web Application.',
     icon: 'buildings',
   },
 ];

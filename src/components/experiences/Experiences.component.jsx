@@ -19,15 +19,10 @@ const FormationsComponent = () => {
             Experiences
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
-            Plongez dans mon parcours professionnel à travers cette timeline
-            captivante ! Cette représentation visuelle vous permettra de
-            découvrir les moments clés depuis mes débuts jusqu'à mes
-            réalisations les plus récentes. C'est avec plaisir que je répondrai
-            à vos{' '}
-            <Link to={'/contact'} className="text-link hover:underline">
-              questions et discuterai
-            </Link>{' '}
-            de nos éventuelles collaborations futures.
+            Dive into my professional journey through this captivating timeline!
+            This visual representation will allow you to explore key moments
+            from my beginnings to my most recent accomplishments. I'm delighted
+            to answer your <Link to={'/contact'} className="text-link hover:underline">questions and discuss</Link> potential future collaborations.
           </p>
           <div className="timeline-container">
             {experiencesData.map((data) => {

@@ -57,7 +57,7 @@ const Data = [
     debut: 'Juil',
     fin: 'Sept',
     annee: '2021',
-    label: `JavaScript${':'} The ultimate training course`,
+    label: 'JavaScript : The ultimate training course',
     ecole: 'Udemy',
     lien: 'https://www.udemy.com/fr/',
     description: 'Learn JavaScript and Build an Application Using an API.',

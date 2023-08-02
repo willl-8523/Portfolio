@@ -40,16 +40,15 @@ const Competences = () => {
               className="w-[5%] h-[5%] pb-0.5 inline-block"
               alt="graduation-cap-img"
             />{' '}
-            Compétences
+            Skills
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
-            En tant que développeur web passionné, je suis prêt à relever de
-            défis en réalisant des interfaces modernes, et esthétiquement
-            attrayantes, tout en garantissant une expérience utilisateur fluide.
-            De plus, je suis également prêt à concevoir et développer des
-            applications web complètes (maquette, front-end et back-end),
-            évolutives et adaptées aux besoins spécifiques. Découvrez mon pannel
-            de compétences en développement web.
+            As a passionate web developer, I am eager to take on challenges by
+            creating modern and aesthetically appealing interfaces while
+            ensuring a seamless user experience. Additionally, I am prepared to
+            design and develop complete web applications (from wireframing to
+            front-end and back-end) that are scalable and tailored to specific
+            needs. Discover my skillset in web development.
           </p>
         </div>
         <div className="w-full px-2 mt-9">
@@ -71,19 +70,19 @@ const Competences = () => {
                 name="base_de_donnees"
                 activeButton={activeButton}
                 onClick={handleClick}
-                label="Base de données"
+                label="Database"
               />
               <ButtonNav
                 name="gestion_projet"
                 activeButton={activeButton}
                 onClick={handleClick}
-                label="Gestion de projet"
+                label="Project Management"
               />
               <ButtonNav
                 name="maquettage"
                 activeButton={activeButton}
                 onClick={handleClick}
-                label="Maquettage"
+                label="Design"
               />
             </ul>
           </nav>
