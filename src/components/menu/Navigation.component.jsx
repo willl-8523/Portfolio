@@ -45,8 +45,8 @@ const Navigation = () => {
         <LinkNav
           onClick={handleClick}
           name="Projects"
-          path="/portfolio"
-          addClass={currentRoute === 'portfolio' ? 'text-red-color' : ''}
+          path="/projects"
+          addClass={currentRoute === 'projects' ? 'text-red-color' : ''}
         />
         <LinkNav
           onClick={handleClick}

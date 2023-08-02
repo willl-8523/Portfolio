@@ -7,27 +7,27 @@ export default function validation(values) {
   const sujet_pattern = /^[A-Za-z0-9\s-.]{4,}$/;
 
   if (values.user_name === '') {
-    errors.user_name = 'Nom est obligatoire';
+    errors.user_name = 'Name is required';
   } else if (!name_pattern.test(values.user_name)) {
-    errors.user_name = 'Nom minimum 2 caractères';
+    errors.user_name = 'Name min 10 characters';
   }
 
   if (values.user_email === '') {
-    errors.user_email = 'Email est obligatoire';
+    errors.user_email = 'Email is required';
   } else if (!email_pattern.test(values.user_email)) {
-    errors.user_email = "Format invalide";
+    errors.user_email = 'Invalid format';
   }
 
   if (values.sujet === '') {
-    errors.sujet = "Sujet obligatoire";
+    errors.sujet = 'Subject is required';
   } else if (!sujet_pattern.test(values.sujet)) {
-    errors.sujet = "Sujet minimum 4 caractères";
+    errors.sujet = 'Subject min 10 characters';
   }
 
   if (values.message === '') {
-    errors.message = 'Le message est obligatoire';
+    errors.message = 'Message is required';
   } else if (!message_pattern.test(values.message)) {
-    errors.message = 'Message minimum 10 caractères';
+    errors.message = 'Message min 10 characters';
   }
 
   return errors;

@@ -4,7 +4,7 @@ const Data = [
     image: require('../assets/foodity.png'),
     img_dec: 'foodity_img',
     nom: 'Foodity',
-    description: "Refonte de la partie Front-End de l'application web.",
+    description: 'Front-End Revamp of the Web Application.',
     technos: [
       { id: 1, techno: 'html5', technoCol: 'bg-html5' },
       { id: 2, techno: 'css3', technoCol: 'bg-css3' },
@@ -17,7 +17,7 @@ const Data = [
     image: require('../assets/permaculture_img.png'),
     img_dec: 'permaculture_img',
     nom: 'Permaculture',
-    description: "Refonte de la partie Front-End de l'application web.",
+    description: 'Front-End Revamp of the Web Application.',
     technos: [
       { id: 1, techno: 'html5', technoCol: 'bg-html5' },
       { id: 2, techno: 'css3', technoCol: 'bg-css3' },
@@ -31,7 +31,7 @@ const Data = [
     img_dec: 'propar_img',
     nom: 'PROPAR',
     description:
-      'le but est de gérer une société de nettoyage destinée aux pros et particuliers',
+      'The idea is to manage a cleaning company catering to both professionals and individuals.',
     technos: [
       { id: 1, techno: 'html5', technoCol: 'bg-html5' },
       { id: 2, techno: 'css3', technoCol: 'bg-css3' },
@@ -49,7 +49,8 @@ const Data = [
     image: require('../assets/panterest_clone.png'),
     img_dec: 'panterest_img',
     nom: 'Panterest',
-    description: 'Le but de ce projet est de réaliser un clone de pinterest.fr',
+    description:
+      'The idea of this project is to create a clone of pinterest.fr.',
     technos: [
       { id: 1, techno: 'html5', technoCol: 'bg-html5' },
       { id: 2, techno: 'css3', technoCol: 'bg-css3' },
@@ -64,9 +65,9 @@ const Data = [
     id: 5,
     image: require('../assets/gestion_clients_factures.png'),
     img_dec: 'gestion_clients_factures',
-    nom: 'Gestion des clients et des factures',
+    nom: 'Management of Clients and Invoices',
     description:
-      'Le but de ce projet est de gerer les utilisateurs leurs clients et factures',
+      'The aim of this project is to manage users, their customers and invoices.',
     technos: [
       { id: 1, techno: 'html5', technoCol: 'bg-html5' },
       { id: 2, techno: 'bootstrap', technoCol: 'bg-bootstrap' },

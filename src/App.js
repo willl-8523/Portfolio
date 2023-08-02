@@ -27,7 +27,7 @@ const App = () => {
             <Route path="trainings" element={<Formations />} />
             <Route path="skills" element={<Competences />} />
             <Route path="experiences" element={<Experiences />} />
-            <Route path="portfolio" element={<Portfolio />} />
+            <Route path="projects" element={<Portfolio />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
           </Routes>

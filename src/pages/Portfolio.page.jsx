@@ -14,15 +14,14 @@ const Portfolio = () => {
               className="w-[3%] h-[3%] pb-1.5 inline-block"
               alt="graduation-cap-img"
             />{' '}
-            Portfolio
+            Projects
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
-            Bienvenue dans mon portfolio artistique ! À travers cette collection
-            d'œuvres, je vous invite à explorer mon univers. Chaque projet
-            présenté ici est le fruit d'un engagement profond, et j'espère
-            qu'ils vous captiveront autant qu'ils m'ont inspiré à les
-            développer. Que cette visite vous offre un aperçu de ma vision et
-            suscite en vous une connexion avec mon travail.
+            Welcome to my artistic portfolio! Through this collection of works,
+            I invite you to explore my world. Each project presented here is the
+            result of a profound commitment, and I hope they captivate you as
+            much as they inspired me to develop them. May this visit offer you
+            an insight into my vision and create a connection with my work.
           </p>
         </div>
         <div className="mt-9 flex flex-row flex-wrap">

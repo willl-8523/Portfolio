@@ -83,14 +83,13 @@ const Contact = () => {
       <div className="flex flex-row flex-wrap py-5">
         <header className="contactHeader mb-6 text-center max-w-full basis-full text-very-dark-gray">
           <h1 className="my-3 text-32px font-bold tracking-wider uppercase">
-            Un nouveau projet en tête ?
+            A new project in mind?
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
-            Je suis ouvert à de nouvelles opportunités professionnelles
-            passionnantes ! Si vous souhaitez collaborer avec moi pour la
-            réalisation d'une application web ou mobile, n'hésitez pas à me
-            contacter. Je serai ravi d'échanger avec vous sur les projets à
-            venir.
+            I am open to exciting new professional opportunities! If you are
+            interested in collaborating with me on a web or mobile application
+            project, feel free to contact me. I would be delighted to discuss
+            future projects with you.
           </p>
         </header>
         <div className="max-w-full basis-full my-5">
@@ -101,7 +100,7 @@ const Contact = () => {
                   <input
                     className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray  ring-1 ring-pink-300 ring-inset"
                     type="text"
-                    placeholder="Nom*"
+                    placeholder="Name*"
                     name="user_name"
                     value={formValues.user_name}
                     onChange={handleChange}
@@ -130,7 +129,7 @@ const Contact = () => {
                 <input
                   className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray  ring-1 ring-pink-300 ring-inset"
                   type="text"
-                  placeholder="Sujet*"
+                  placeholder="Subject*"
                   name="sujet"
                   value={formValues.sujet}
                   onChange={handleChange}
@@ -144,7 +143,7 @@ const Contact = () => {
                 <textarea
                   className="w-full outline-0 py-3 px-4 rounded-md text-very-dark-gray ring-1 ring-pink-300 ring-inset"
                   name="message"
-                  placeholder="Message (minimun 10 caractères)"
+                  placeholder="Message (minimum 10 characters)"
                   value={formValues.message}
                   onChange={handleChange}
                 ></textarea>
@@ -161,7 +160,7 @@ const Contact = () => {
                 />
                 <ErrorComponent
                   error_name={error}
-                  message='Veuillez cocher la case "Je ne suis pas un robot"'
+                  message='Please check the box "Je ne suis pas un robot"'
                 />
               </div>
               <button className="flex items-center gap-1.5 bg-davy-grey text-main-color rounded-md font-light tracking-wider my-3 py-3 px-4 hover:bg-very-dark-gray">
