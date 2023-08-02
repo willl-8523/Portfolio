@@ -1,5 +1,4 @@
 import React from 'react';
-import './contentHome.css';
 import { Link } from 'react-router-dom';
 import Service from './Service.component';
 
@@ -8,86 +7,81 @@ const ContentHome = () => {
     <main className="max-w-6xl w-full my-16 mx-auto">
       <section className="flex flex-row flex-wrap items-center">
         <h3 className="title-content-home max-w-25 w-1/4 my-7 px-2 font-semibold text-base uppercase">
-          Comment tout à commencer
+          How It All Started
         </h3>
         <p className="description-content-home max-w-75 w-3/4 my-7 px-2 text-very-dark-gray">
-          Tout a commencé en 2013 lorsqu'un bon ami m'a initié au développement
-          web.
-          <br />
-          <br /> Nous avons commencé à apprendre sur le{' '}
-          <span className="text-link">siteDuZero</span> devenu
+          It all started in 2013 when a good friend introduced me to web
+          development. <br />
+          <br /> We began learning HTML on the{' '}
+          <span className="text-link">siteDuZero</span>, which later became
           <Link
             to="https://openclassrooms.com/fr/"
             target="_blank"
             className="text-link hover:underline"
           >
             {' '}
-            Openclassroom{' '}
+            Openclassroom.
           </Link>
-          le HTML, et peu de temps après je me suis mis au CSS, à ce moment-là
-          j'ai été époustouflé par sa puissance !<br />
-          <br /> J'ai commencé à apprendre jQuery pour m'améliorer mais après un
-          certain temps, réalisant que jQuery est construit au-dessus de
-          JavaScript, je l'ai laissé tomber et j'ai commencé à apprendre Vanilla
-          JS, et quand j'ai senti que je comprenais ce qui se passait sous le
-          capot, j'ai choisi ReactJS pour m'aider à long terme sur le front-end.
+          Shortly after, I delved into CSS, and I was amazed by its power at
+          that moment!
           <br />
+          <br /> I started learning jQuery to improve my skills, but after a
+          while, I realized that jQuery is built on top of JavaScript. So, I
+          dropped it and began learning Vanilla JS. Once I felt I understood
+          what was happening under the hood, I chose ReactJS to empower my
+          frontend skills for the long term.
           <br />
-          J'ai également ajouté NodeJS, PHP et son Framework Symfony à ma
-          palette de compétences afin de pouvoir fournir des services Full-Stack
-          JavaScript :)
+          <br />I also added NodeJS, PHP, and its Symfony Framework to my skill
+          set, enabling me to provide Full-Stack JavaScript services 😀.
         </p>
       </section>
       <section className="flex flex-row flex-wrap items-center">
         <h3 className="title-content-home max-w-25 w-1/4 my-7 px-2 font-semibold text-base uppercase">
-          Fournir des services
+          Providing Services
         </h3>
         <p className="description-content-home max-w-75 w-3/4 my-7 px-2 text-very-dark-gray">
-          Comme mentionné ci-dessus, je suis spécialisé en HTML/CSS, JavaScript
-          et la librairie ReactJS <br /> sur le frontend, mais je suis aussi
-          assez à l'aise en PHP <br />
-          et à son Framework Symfony pour le back-end. <br />
+          As mentioned above, I specialize in HTML/CSS, JavaScript, and the
+          ReactJS library for the frontend. Additionally, I am proficient in PHP
+          and its Symfony Framework for the backend.
           <br />
-          Pour plus de détails sur mes projets réalisés, consultez mon portfolio
-          ainsi que mon profil{' '}
+          <br />
+          For more details about the projects I have worked on, please refer to
+          my portfolio and my{' '}
           <Link
             to="https://www.malt.fr/profile/wilfriedmbenock"
             target="_blank"
             className="text-link hover:underline"
           >
-            Malt
+            Malt profile.
           </Link>{' '}
-          . <br />
           <br />
-          Consultez la chronologie pour un aperçu de mes progrès et de mes
-          réalisations jusqu'à présent. <br />
           <br />
-          Prenez contact avec moi et nous ferons passer votre site web au niveau
-          supérieur !
+          You can check out the timeline for an overview of my progress and
+          achievements so far.
+          <br />
+          <br />
+          Feel free to get in touch with me, and together we will take your
+          website to the next level!
         </p>
       </section>
       <section className="services flex flex-row flex-wrap text-center text-very-dark-gray">
         <Service
           lienImg={require('../../assets/web_dev.png')}
           descriptionImg="desktop_img"
-          titreService="Developpement web"
-          descriptionService="HTML, CSS(Bootstrap, Tailwind), JavaScript(ReactJS) pour le
-            Front-end et NodeJS, PHP(Symfony) pour le Back-end ? tout ce que
-            vous voulez, je m'en occupe."
+          titreService="Web development"
+          descriptionService="HTML, CSS (Bootstrap, Tailwind), JavaScript (ReactJS) for the frontend, and NodeJS, PHP (Symfony) for the backend? I can handle it all."
         />
         <Service
           lienImg={require('../../assets/responsive_design.png')}
           descriptionImg="responsive_design_img"
           titreService="Responsive"
-          descriptionService="En 2023, vous ne pouvez pas aller en ligne sans avoir un site web
-            adapté aux mobiles. Laissez-moi m'en occuper pour vous."
+          descriptionService="In 2023, you can't go online without having a mobile-responsive website. Let me take care of it for you."
         />
         <Service
           lienImg={require('../../assets/design_to_html.png')}
           descriptionImg="design_to_html_img"
           titreService="Maquette en HTML"
-          descriptionService="Avez-vous un joli dessin en figma ou en photoshop ? Contactez-moi et
-            je les convertirai en sites Web entièrement réactifs et attrayants."
+          descriptionService="Do you have any beautiful designs in Figma or Photoshop? Contact me, and I'll turn them into fully responsive and appealing websites."
         />
       </section>
     </main>

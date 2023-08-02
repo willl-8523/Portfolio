@@ -26,13 +26,13 @@ const Navigation = () => {
       <ul className="list-none p-0 my-1">
         <LinkNav
           onClick={handleClick}
-          name="Formations"
+          name="Educational Programs"
           path="/formations"
           addClass={currentRoute === 'formations' ? 'text-red-color' : ''}
         />
         <LinkNav
           onClick={handleClick}
-          name="Compétences"
+          name="Skills"
           path="/competences"
           addClass={currentRoute === 'competences' ? 'text-red-color' : ''}
         />
@@ -44,7 +44,7 @@ const Navigation = () => {
         />
         <LinkNav
           onClick={handleClick}
-          name="Portfolio"
+          name="Projects"
           path="/portfolio"
           addClass={currentRoute === 'portfolio' ? 'text-red-color' : ''}
         />

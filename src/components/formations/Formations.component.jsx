@@ -17,7 +17,7 @@ const FormationsComponent = () => {
               className="w-[5%] h-[5%] pb-1 inline-block"
               alt="graduation-cap-img"
             />{' '}
-            diplômes et certifications
+            Credentials
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
             Vous trouverez ci-dessous une chronologie des formations et des
