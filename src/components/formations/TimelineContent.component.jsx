@@ -36,13 +36,15 @@ const TimelineContent = ({
                 {ecole}
               </Link>
             </h4>
-            {certification && (<Link
-              className="arrow p-1 mb-2 text-sm font-semibold hover:underline"
-              to={certification}
-              target="_blank"
-            >
-              Voir certification {' '}
-            </Link>)}
+            {certification && (
+              <Link
+                className="arrow p-1 mb-2 text-sm font-semibold hover:underline"
+                to={certification}
+                target="_blank"
+              >
+                View certification{' '}
+              </Link>
+            )}
           </>
         )}
         <p className="p-1 mb-2 italic">{description}</p>

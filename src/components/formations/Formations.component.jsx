@@ -20,16 +20,16 @@ const FormationsComponent = () => {
             Credentials
           </h1>
           <p className="leading-7 tracking-wider font-light text-sm">
-            Vous trouverez ci-dessous une chronologie des formations et des
-            certifications professionnelles que j'ai pû suivre. Pour plus de
-            d'tail vous pouvez consulter mon{' '}
+            Below is a timeline of the trainings and professional certifications
+            I have completed. For more details, you can refer to my{' '}
             <Link to={CV} target="_blank" className="text-link hover:underline">
               CV
             </Link>{' '}
-            ou me{' '}
+            or{' '}
             <Link to={'/contact'} className="text-link hover:underline">
-              contacter
-            </Link>
+              contact
+            </Link>{' '}
+            me.
           </p>
           <div className="timeline-container">
             {formationsData.map((data) => {
