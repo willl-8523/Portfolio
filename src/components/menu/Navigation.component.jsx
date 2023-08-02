@@ -27,14 +27,14 @@ const Navigation = () => {
         <LinkNav
           onClick={handleClick}
           name="Educational Programs"
-          path="/formations"
-          addClass={currentRoute === 'formations' ? 'text-red-color' : ''}
+          path="/trainings"
+          addClass={currentRoute === 'trainings' ? 'text-red-color' : ''}
         />
         <LinkNav
           onClick={handleClick}
           name="Skills"
-          path="/competences"
-          addClass={currentRoute === 'competences' ? 'text-red-color' : ''}
+          path="/skills"
+          addClass={currentRoute === 'skills' ? 'text-red-color' : ''}
         />
         <LinkNav
           onClick={handleClick}
