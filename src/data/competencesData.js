@@ -72,7 +72,12 @@ export const backEnd = [
       },
       {
         id: 5,
-        titre: 'NodeJs',
+        titre: 'NextJS',
+        image: require('../assets/logo_competences/nextjs.svg'),
+      },
+      {
+        id: 6,
+        titre: 'Postman',
         image: require('../assets/logo_competences/postman-icon-svgrepo-com.svg'),
       },
     ],
@@ -97,6 +102,11 @@ export const baseDeDonnee = [
         id: 3,
         titre: 'Firebase',
         image: require('../assets/logo_competences/firebase_Logo_Logomark.svg'),
+      },
+      {
+        id: 3,
+        titre: 'MongoDB',
+        image: require('../assets/logo_competences/mongodb.svg'),
       },
     ],
   },
