@@ -79,7 +79,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="my-6 max-w-6xl w-full px-5">
+    <div className="my-6 max-w-6xl w-full px-5 mx-auto">
       <div className="flex flex-row flex-wrap py-5">
         <header className="contactHeader mb-6 text-center max-w-full basis-full text-very-dark-gray">
           <h1 className="my-3 text-32px font-bold tracking-wider uppercase">
