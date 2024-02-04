@@ -57,15 +57,6 @@ module.exports = {
         'shadow-card': '0 0 5px rgba(0,0,0,.3)',
         'shadow-burger': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       },
-      animation: {
-        beating: 'beating 1s ease-in-out infinite',
-      },
-      keyframes: {
-        beating: {
-          from: { transform: 'scale(1)' },
-          to: { transform: 'scale(1.08)' },
-        },
-      },
       flex: {
         'flex-xs-12': '0 0 auto',
       },
