@@ -9,7 +9,6 @@ import './App.css';
 import Menu from './components/menu/Menu.component';
 import Competences from './pages/Competences.page';
 import Contact from './pages/contact/Contact.page';
-import Experiences from './pages/Experiences.page';
 import Formations from './pages/Formations.page';
 import Home from './pages/Home.page';
 import Portfolio from './pages/Portfolio.page';
@@ -26,7 +25,6 @@ const App = () => {
           <Routes>
             <Route path="trainings" element={<Formations />} />
             <Route path="skills" element={<Competences />} />
-            <Route path="experiences" element={<Experiences />} />
             <Route path="projects" element={<Portfolio />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
