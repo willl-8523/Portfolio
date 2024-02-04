@@ -5,7 +5,7 @@ import NoteBook from '../assets/logo_competences/notebook.png';
 
 const Portfolio = () => {
   return (
-    <div className="my-6 px-5 max-w-6xl w-full ">
+    <div className="my-6 px-5 max-w-6xl w-full mx-auto">
       <div className="min-h-screen">
         <div className="portfolioHeader max-w-full basis-full flex-flex-xs-12 px-2 py-5 text-center text-very-dark-gray">
           <h1 className="text-32px font-black uppercase tracking-widest my-2.5 relative">

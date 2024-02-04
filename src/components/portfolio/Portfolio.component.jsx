@@ -36,10 +36,9 @@ const PortfolioComponent = ({
           </div>
           <Link
             to={vue}
-            className="text-center font-bold text-red-color p-1 text-sm hover:underline duration-300"
+            className="flex justify-center items-center font-bold mx-auto text-red-color text-sm hover:underline duration-300"
             target="_blank"
-          >
-            <i className="bx bxl-github"></i> {'>'} View source code
+          >View Demo
           </Link>
         </div>
       </div>
