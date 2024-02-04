@@ -31,7 +31,7 @@ const ContentHome = () => {
           what was happening under the hood, I chose ReactJS to empower my
           frontend skills for the long term.
           <br />
-          <br />I also added NodeJS, PHP, and its Symfony Framework to my skill
+          <br />I also added NodeJS, PHP, Symfony and NextJS to my skill
           set, enabling me to provide Full-Stack JavaScript services 😀.
         </p>
       </section>
@@ -41,8 +41,7 @@ const ContentHome = () => {
         </h3>
         <p className="description-content-home max-w-75 w-3/4 my-7 px-2 text-very-dark-gray">
           As mentioned above, I specialize in HTML/CSS, JavaScript, and the
-          ReactJS library for the frontend. Additionally, I am proficient in PHP
-          and its Symfony Framework for the backend.
+          ReactJS library for the frontend. Additionally, I am proficient in Symfony or NextJS Framework for the backend.
           <br />
           <br />
           For more details about the projects I have worked on, please refer to
@@ -69,7 +68,7 @@ const ContentHome = () => {
           lienImg={require('../../assets/web_dev.png')}
           descriptionImg="desktop_img"
           titreService="Web development"
-          descriptionService="HTML, CSS (Bootstrap, Tailwind), JavaScript (ReactJS) for the frontend, and NodeJS, PHP (Symfony) for the backend? I can handle it all."
+          descriptionService="HTML, CSS (Bootstrap, Tailwind), JavaScript (ReactJS) for the frontend, and NodeJS (NextJS), PHP (Symfony) for the backend? I can handle it all."
         />
         <Service
           lienImg={require('../../assets/responsive_design.png')}
