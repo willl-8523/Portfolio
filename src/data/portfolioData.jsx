@@ -1,5 +1,18 @@
 const Data = [
   {
+    id: 5,
+    image: require('../assets/e-commerce.png'),
+    img_dec: 'e-commerce app',
+    nom: 'Next E-commerce app',
+    description:
+      'Connect with amazing application and buy and sell products',
+    technos: [
+      { id: 1, techno: 'nextJS', technoCol: 'bg-symfony' },
+      { id: 2, techno: 'tailwing', technoCol: 'bg-tailwing' },
+    ],
+    vue: 'https://next-e-commerce-sand.vercel.app/',
+  },
+  {
     id: 4,
     image: require('../assets/event-app.png'),
     img_dec: 'Event-app',
