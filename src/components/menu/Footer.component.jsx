@@ -2,6 +2,9 @@ import React from 'react';
 import LinkFooter from './Link-footer.component';
 
 const Footer = () => {
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+
   return (
     <footer className="text-davy-grey">
       <ul className="list-none my-1 text-lg">
@@ -16,7 +19,7 @@ const Footer = () => {
         />
         <LinkFooter link="https://twitter.com/M_Wilfried237" icon={'twitter'} />
       </ul>
-      <p>Copyright @ 2023</p>
+      <p>Copyright @ {year}</p>
     </footer>
   );
 };
