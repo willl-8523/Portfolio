@@ -1,5 +1,19 @@
 const Data = [
   {
+    id: 10,
+    debut: 'May',
+    fin: 'Jul',
+    annee: '2024',
+    label: '50 Projects In 50 Days - HTML, CSS & JavaScript',
+    ecole: 'Udemy',
+    lien: 'https://www.udemy.com/',
+    description:
+      'Sharpen your skills by building 50+ quick, unique and fun mini projects',
+    certification:
+      'https://drive.google.com/file/d/1YjoBWYA1uDkCaWFMW1WLGgsG57znThhy/view',
+    icon: 'award',
+  },
+  {
     id: 9,
     debut: 'Oct',
     fin: 'Nov',
